@@ -1,0 +1,70 @@
+Algorithms
+
+Linear Regression:
+1) Take Input
+2) Compute Mean
+3) Calculate Deviation
+4) Calculate Slope
+5) Calculate Intercepts
+6) Take Output where y=ax+b, a=intercept,b= slope
+
+Polynomial Regression:
+1)Data Pre-processing
+2)Build a Linear Regression model and fit it to the dataset
+3)Build a Polynomial Regression model and fit it to the dataset
+4)Visualize the result for Linear Regression and Polynomial Regression model
+5)Change the degree for polynomial model to 3 and 4 and visualize the result
+6)Predicting the output for for linear regression model and polynomial model and compare to check which is correct
+
+Logistic Regression:
+1)Data Pre-processing step
+2)Fitting Logistic Regression to the Training set
+3)Predicting the test result
+4)Test accuracy of the result(Creation of Confusion matrix)
+5)Visualizing the test set result.
+
+K-Means Clustering:
+Step 1. Data Pre-processing
+Step 2. Finding the optimal number of clusters using the elbow method
+Step 3. Training the K-means algorithm on the training dataset
+Step 4. Visualizing the clusters
+
+Hierarchical Clustering:
+1. Data Pre-processing
+2. Finding the optimal number of clusters using the Dendrogram
+3. Training the hierarchical clustering model
+4. Visualizing the clusters
+
+Naive Bayes Classifier:
+1)Data pre-processing step
+[ importing libraries, Defining X and Y variables, Dropping redundant columns, Encoding, Handling missing values,
+Feature scaling / Standardizing if required, training testing and splitting the data ]
+2)Fitting Naive Bayes classifier to the Training set Data
+3)Predicting the test result
+4)Find the accuracy of your model dataset
+5)Create Confusion matrix for your dataset
+6)Visualizing the test set result if needed
+7)Make Conclusions about your dataset
+
+
+SVM Regression:
+
+Step 1 Load the Dataset (use your own dataset)
+Step 2 Use the Support Vector Machine With different
+Kernels [linear, rbf, polynomial]
+Step 3 Evaluate the Performance
+Step 4 Compute the Accuracy
+Step 5 Visualize the Decision Boundaries
+Step 6 Obtain the support vectors of the kernel
+Step 7 Final Conclusion
+
+
+Monte Carlo Simulation:
+Input: Define the problem or scenario you want to simulate and determine the variables involved. Set the number of iterations or simulations you want to perform (N).
+Initialize variables: Set up any necessary variables or counters to keep track of the results. For example, if you are simulating the outcome of a game, you might initialize a counter for wins or losses.
+Simulation loop: Repeat the following steps N times:
+a. Generate random values for each variable involved in the simulation. These random values should follow a probability distribution that is appropriate for the scenario you are simulating.
+b. Perform the simulation using the generated values.
+c. Update the result or counter based on the outcome of the simulation.
+Calculate results: After the simulation loop is complete, calculate the desired metrics or statistics based on the results obtained. This could include averages, percentages, or any other relevant measures.
+Output: Present the results of the simulation, including the calculated metrics or statistics. You may also visualize the results using graphs or charts if applicable.
