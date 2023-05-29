@@ -1,0 +1,91 @@
+1)RANDOM WALK
+import random
+import math
+def random_walk(n):
+"""Simulate a random walk of n steps in two dimensions."""
+x, y = 0, 0
+for i in range(n):
+# Take a random step in one of four directions
+dx, dy = random.choice([(0, 1), (0, -1), (1, 0), (-1, 0)])
+x += dx
+y += dy
+return x, y
+# Simulate the random walk 10,000 times
+num_trials = 10000
+distances = []
+for i in range(num_trials):
+x, y = random_walk(24)
+distance = math.sqrt(x**2 + y**2)
+distances.append(distance)
+# Calculate the expected distance
+expected_distance = sum(distances) / num_trials
+print("Expected distance after 24 steps:", expected_distance)
+Expected distance after 24 steps: 4.328188164817098
+
+
+------------------------------------------------------
+2)Area of Circle to Area of Triangle
+import random
+import math
+# Define the vertices of the right-angled triangle
+vertices = [(0, 0), (4, 0), (0, 3)]
+# Calculate the area of the right-angled triangle
+a, b, c = 4, 3, 5
+area_triangle = 0.5 * a * b
+# Define the center and radius of the inscribed circle
+incenter_x = (a * vertices[2][0] + b * vertices[0][0] + c * vertices[1][0]) / (a + b + c)
+incenter_y = (a * vertices[2][1] + b * vertices[0][1] + c * vertices[1][1]) / (a + b + c)
+incenter = (incenter_x, incenter_y)
+radius = area_triangle / (0.5 * (a + b + c))
+# Choose a large number of random points within the triangle
+num_points = 100000
+count_inside_circle = 0
+for i in range(num_points):
+# Choose a random point within the triangle
+x = random.uniform(0, 4)
+y = random.uniform(0, 3)
+# Check if the point is inside the inscribed circle
+if math.sqrt((x - incenter[0])**2 + (y - incenter[1])**2) <= radius:
+count_inside_circle += 1
+# Calculate the area of the circle using the count of points and the area of the triangle
+area_circle = count_inside_circle / num_points * area_triangle
+# Calculate the ratio of the area of the circle to the area of the triangle
+ratio = area_circle / area_triangle
+# Print the result
+print("Ratio of area of circle to area of triangle:", ratio)
+Ratio of area of circle to area of triangle: 0.2617
+
+
+----------------------------------------------------------------
+
+3)Area of Circle to Area of Triangle
+
+import random
+import math
+# Define the vertices of the right-angled triangle
+vertices = [(0, 0), (4, 0), (0, 3)]
+# Calculate the area of the right-angled triangle
+a, b, c = 4, 3, 5
+area_triangle = 0.5 * a * b
+# Define the center and radius of the inscribed circle
+incenter_x = (a * vertices[2][0] + b * vertices[0][0] + c * vertices[1][0]) / (a + b + c)
+incenter_y = (a * vertices[2][1] + b * vertices[0][1] + c * vertices[1][1]) / (a + b + c)
+incenter = (incenter_x, incenter_y)
+radius = area_triangle / (0.5 * (a + b + c))
+# Choose a large number of random points within the triangle
+num_points = 100000
+count_inside_circle = 0
+for i in range(num_points):
+# Choose a random point within the triangle
+x = random.uniform(0, 4)
+y = random.uniform(0, 3)
+# Check if the point is inside the inscribed circle
+if math.sqrt((x - incenter[0])**2 + (y - incenter[1])**2) <= radius:
+count_inside_circle += 1
+# Calculate the area of the circle using the count of points and the area of the triangle
+area_circle = count_inside_circle / num_points * area_triangle
+# Calculate the ratio of the area of the circle to the area of the triangle
+ratio = area_circle / area_triangle
+# Print the result
+print("Ratio of area of circle to area of triangle:", ratio)
+Ratio of area of circle to area of triangle: 0.2617
